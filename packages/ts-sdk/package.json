@@ -1,16 +1,16 @@
 {
   "name": "@boltbunny/ts-sdk",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "license": "Apache-2.0",
   "author": "",
   "main": "./dist/ts-sdk.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pub": "pnpm publish --no-git-checks --access public"
   },
   "devDependencies": {
     "typescript": "^5.4.5",
@@ -29,7 +29,8 @@
   },
   "homepage": "",
   "dependencies": {
-    "@aptos-labs/ts-sdk": "^1.12.2"
+    "@aptos-labs/ts-sdk": "^1.12.2",
+    "graphql-request": "^6.1.0"
   },
   "peerDependencies": {
     "@aptos-labs/ts-sdk": "^1.12.2"

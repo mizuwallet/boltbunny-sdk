@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.12.2",
+    "@aptos-labs/wallet-adapter-core": "^3.10.0",
     "@boltbunny/ts-sdk": "workspace:^",
     "petra-plugin-wallet-adapter": "^0.4.5",
     "vue": "^3.4.21"
@@ -17,6 +19,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-mkcert": "^1.17.5",
     "vue-tsc": "^2.0.6"
   }
 }

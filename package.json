@@ -2,14 +2,12 @@
   "name": "boltbunny",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "changeset-version": "pnpm changeset version",
     "dev:sdk": "pnpm ts-sdk build --watch",
     "format": "prettier --write .",
-    "prepare": "husky install",
     "ts-sdk": "pnpm --filter ts-sdk",
     "app": "pnpm --filter web-app"
   },
