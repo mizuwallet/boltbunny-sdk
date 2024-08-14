@@ -7,8 +7,8 @@ interface BoltBunnyClientConstructorParams {
 }
 
 const GRAPHQL_URL: Record<Network.TESTNET | Network.MAINNET, string> = {
-  [Network.TESTNET]: 'https://hasura.groupwar.xyz/v1/graphql',
-  [Network.MAINNET]: 'https://hasura.alcove.pro/v1/graphql',
+  [Network.TESTNET]: 'https://hasura-wallet.groupwar.xyz/v1/graphql',
+  [Network.MAINNET]: 'https://api.mz.xyz/v1/graphql/',
 };
 
 export class BoltBunnyClient {
@@ -27,7 +27,6 @@ export class BoltBunnyClient {
    * @returns
    *
    * @example
-   * const a = 1;
    * const txn: SimpleTransaction = await aptos.transaction.build.simple({
    *    ...
    * });
@@ -45,7 +44,7 @@ export class BoltBunnyClient {
 
     const GQL_Client = new GraphQLClient(GRAPHQL_URL[this.network], {
       headers: () => ({
-        'x-alcove-app-secret': this.APISecretKey,
+        'x-mizu-app-secret': this.APISecretKey,
       }),
     });
 
