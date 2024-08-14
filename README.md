@@ -15,7 +15,10 @@ Usage
 ```
 import { BoltBunny } from '@boltbunny/ts-sdk'
 
-const bbClient = new BoltBunny()
+const bbClient = new BoltBunny({
+	APISecretKey: <YOUR_API_SECRET_KEY>,
+	network: 'mainnet' | 'testnet'
+})
 
 const txn: SimpleTransaction = await aptos.transaction.build.simple({
    ...
